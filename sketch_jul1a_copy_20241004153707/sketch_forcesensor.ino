@@ -160,6 +160,8 @@ void loop() {
         // Move stepper forward with speedFor1stDrive
         moveStepper(stepsToPerform, LOW, speedFor1stDrive);
 
+        delay(1000);
+
         // Move stepper back to original position with speedFor2ndDrive
         moveStepper(stepsToPerform, HIGH, speedFor2ndDrive);
 
